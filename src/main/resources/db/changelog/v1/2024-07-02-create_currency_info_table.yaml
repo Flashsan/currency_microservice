@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create table currency_info
+      author: Aliaksandr Hryharovich
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: date
+                  type: date
+              - column:
+                  name: abbreviation
+                  type: varchar
+              - column:
+                  name: scale
+                  type: varchar
+              - column:
+                  name: name
+                  type: varchar
+              - column:
+                  name: official_rate
+                  type: varchar
+            tableName: currency_info

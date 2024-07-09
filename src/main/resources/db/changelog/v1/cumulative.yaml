@@ -1,0 +1,4 @@
+databaseChangeLog:
+  # create table structure
+  - include:
+      file: /db/changelog/v1/2024-07-02-create_currency_info_table.yaml
