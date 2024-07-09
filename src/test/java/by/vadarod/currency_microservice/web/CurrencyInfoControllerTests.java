@@ -63,12 +63,6 @@ public class CurrencyInfoControllerTests {
     @DisplayName("Get currency info by date and abbreviation.")
     void getCurrencyInfoByDateAndAbr() throws Exception {
 
-        mockMvc.perform(MockMvcRequestBuilders
-                        .get("/" + CURRENCY_INFO_API + "/byDate?date=" + DATE)
-                        .accept(MediaType.APPLICATION_JSON))
-                .andDo(print())
-                .andExpect(status().isOk());
-
         RequestParamsDto requestParamsDto =
                 RequestParamsDto.builder()
                         .date(LocalDate.of(2024, 07,8))

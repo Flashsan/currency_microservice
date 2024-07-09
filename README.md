@@ -1,4 +1,12 @@
 # currency_microservice
+Используемые технологии:
+- Java 17;
+- Maven;
+- Spring-boot;
+- Mapstruct;
+- H2;
+- Liquibase;
+- Spring doc-open api.
 
 Back-разработчик Java
 Задание: В рамках тестового задания предлагается реализовать микросервис с использованием фреймворка Spring Boot.
@@ -31,6 +39,6 @@ Back-разработчик Java
 - заустить на своей локальной машине;
 - собрать приложение с помощью maven (mvn->clean->package);
 - запустить сборку образа docker build -t spring-boot-docker:0.0.1 . ;
-- запустить образ docker run -p 8181:8181 upagge/spring-boot-docker:0.0.1;
+- запустить образ docker run -p 8181:8181 spring-boot-docker:0.0.1;
 - открыть браузер и перейти для просмотра информации Api http://localhost:8181/swagger-ui/index.html .
 
